@@ -1,0 +1,29 @@
+{  
+  "name": "淘宝用户数据收集",  
+  "version": "1.0.0",  
+  "description": "记录用户全程操作数据",
+   "manifest_version": 2,
+   "icons":
+   {
+   	"16":"48.png",
+   	"32":"48.png",
+   	"48":"48.png",
+   	"128":"128.png"
+   },
+   "background": { "scripts": ["js/jquery.min.js","js/jquery.cookie.js", "js/teleport.js"]
+ },
+   "content_scripts": [
+    {
+      "matches": ["http://*.taobao.com/*","https://*.taobao.com/*","http://*.tmall.com/*","https://*.tmall.com/*"],
+      "js": ["js/jquery.min.js", "js/operation-record.js"]
+    }
+  ],  
+   "permissions": [
+     "http://localhost/*","https://localhost/*","http://*.taobao.com/*","https://*.taobao.com/*","http://*.tmall.com/*","https://*.tmall.com/*",
+    "webRequest","webRequestBlocking"
+  ],
+  "browser_action": {  
+    "default_icon": "48.png" ,
+    "default_title": "淘宝用户数据收集"
+  }  
+} 

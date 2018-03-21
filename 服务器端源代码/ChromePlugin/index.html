@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>淘宝用户数据收集</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/icon" href="i/favicon.ico">
+
+  <!-- Amaze UI CSS -->
+  <link rel="stylesheet" href="lib/amazeui/css/amazeui.min.css">
+	<!-- 自己的css -->
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/theme.black-ice.css">
+</head>
+<body>
+
+<header class="am-topbar am-topbar-inverse Header" >
+  <h1 class="am-topbar-brand ">
+    <a href="#"><img src="i/login_w.png" alt="Chuck文件管理系统"></a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-active"><a href="#">首页</a></li>
+    </ul>
+
+    
+  
+  
+    <div class="am-topbar-right" id="exit">
+      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">退出</button>
+    </div>
+    <div class="am-topbar-right " id="userName">
+      <span class="am-icon-user"></span>
+    </div>
+
+  </div>
+</header>
+<div class="am-g am-g-collapse">
+<div class="am-u-sm-12  ">
+  <div class="am-u-sm-4 am-u-md-5 am-u-lg-3 left">
+
+      <div class="am-panel am-panel-default">
+        <div class="am-panel-hd"><i class="am-icon-th-large"></i> 操作功能</div>
+        <div class="am-panel-bd">
+        <button type="button" class="am-btn  am-round am-btn-block functionBtn" id="checkUserDataBtn">
+        <i class="am-icon-search"></i> 查看用户数据</button>
+        <button type="button" class="am-btn  am-round am-btn-block functionBtn" id="checkSearchHeatmapBtn">
+    <i class="am-icon-search"></i> 查看搜索热力图</button>
+    <button type="button" class="am-btn  am-round am-btn-block functionBtn" id="checkitemHeatmapBtn">
+    <i class="am-icon-search"></i> 查看商品页热力图</button>
+    <button type="button" class="am-btn  am-round am-btn-block functionBtn" id="checkJumpDataBtn">
+    <i class="am-icon-search"></i> 查看页面跳转数据</button>
+    <button type="button" class="am-btn  am-round am-btn-block functionBtn" id="aboutBtn">
+    <i class="am-icon-pencil-square"></i> 关于</button>
+        </div>
+      </div>
+
+
+    </div>
+<div class="am-u-sm-8 am-u-md-7 am-u-lg-9 checkUserData hidden">
+
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title"><i class="am-icon-search"></i> 查看用户数据</h3>
+  </header>
+  <div class="am-panel-bd am-g ">
+
+<section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='' id="userDateAccordion">
+
+      <dl class="am-accordion-item">
+        <dt class="am-accordion-title">
+        数据载入中
+        </dt>
+        <dd class="am-accordion-bd am-collapse">
+          <div class="am-accordion-content">
+
+          </div>
+        </dd>
+      </dl>
+
+
+
+  </section>
+
+  </div>
+</section>
+</div>
+
+<div class="am-u-sm-8 am-u-md-8 am-u-lg-9 checkSearchHeatmap hidden">
+
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title"><i class="am-icon-search"></i> 查看搜索热力图</h3>
+  </header>
+  <div class="am-panel-bd am-g ">
+
+<section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='' id="SearchHeatmapAccordion">
+
+      <dl class="am-accordion-item">
+        <dt class="am-accordion-title">
+        淘宝搜索页
+        </dt>
+        <dd class="am-accordion-bd am-collapse">
+          <div class="am-accordion-content">
+                <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='' id="taobaoSearchAccordion">
+                </section>
+          </div>
+        </dd>
+      </dl>
+      <dl class="am-accordion-item">
+        <dt class="am-accordion-title">
+        天猫搜索页
+        </dt>
+        <dd class="am-accordion-bd am-collapse">
+          <div class="am-accordion-content">
+                <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='' id="tmallSearchAccordion">
+                </section>
+          </div>
+        </dd>
+      </dl>
+  </section>
+
+
+
+  </div>
+</section>
+</div>
+
+<div class="am-u-sm-8 am-u-md-8 am-u-lg-9 checkitemHeatmap hidden">
+
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title"><i class="am-icon-search"></i> 查看商品页热力图</h3>
+  </header>
+  <div class="am-panel-bd am-g ">
+
+  <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='' id="itemHeatmapAccordion">
+
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title">
+            数据载入中
+          </dt>
+          <dd class="am-accordion-bd am-collapse">
+            <div class="am-accordion-content">
+
+            </div>
+          </dd>
+        </dl>
+
+
+
+    </section>
+
+  </div>
+</section>
+</div>
+
+
+<div class="am-u-sm-8 am-u-md-8 am-u-lg-9 checkJumpData hidden">
+
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title"><i class="am-icon-search"></i> 查看页面跳转数据</h3>
+  </header>
+  <div class="am-panel-bd am-g ">
+  <div class="am-u-sm-12 am-u-md-12 am-u-lg-12" id="jumpDataProp">
+    <div class="jumpDataPropItem" id="prop0">淘宝搜索 到 淘宝搜索 概率：<span></span>%</div>
+    <div class="jumpDataPropItem" id="prop1">天猫搜索 到 天猫搜索 概率：<span></span>%</div>    
+    <div class="jumpDataPropItem" id="prop2">淘宝搜索 到 淘宝商品 概率：<span></span>%</div>
+    <div class="jumpDataPropItem" id="prop3">淘宝搜索 到 天猫商品 概率：<span></span>%</div>
+    <div class="jumpDataPropItem" id="prop4">天猫搜索 到 天猫商品 概率：<span></span>%</div>
+    <div class="jumpDataPropItem" id="prop5">淘宝商品 到 天猫商品 概率：<span></span>%</div>
+    <div class="jumpDataPropItem" id="prop6">淘宝商品 到 淘宝商品 概率：<span></span>%</div>
+  </div>
+  <div class="am-u-sm-12 am-u-md-12 am-u-lg-12" id="jumpDataTable">
+    
+
+  </div>
+  </div>
+</section>
+</div>
+
+
+<div class="am-u-sm-8 am-u-md-10 am-u-lg-9 about">
+
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title"><i class="am-icon-pencil-square"></i> 关于</h3>
+  </header>
+  <footer class="am-panel-footer">
+    <div class="am-g">
+      <div class="am-u-sm-12 am-u-md-12 am-u-lg-10 am-u-lg-offset-1" id="aboutbox">
+        <p>
+          本项目基于B/S结构，使用PHP+HTML+CSS+JS完成.
+        <p>1.为每个用户生成唯一身份标识符，并持续追踪用户行为。</p>
+        <p>2.记录用户的点击数据，包括点击的时间，位置，点击元素的名称等，计算各个元素被点击的概率。</p>
+        <p>3.记录用户的搜索行为，包括搜索内容，产品类型选项，价格筛选过程，搜索结果排序选择过程。</p>
+        <p>4.记录用户的浏览数据，包括页面跳转关系，计算各个来源页所占比例，跳转页所占比例。</p>
+        <p>5.收集并记录用户的详细浏览特征，包括在商品页面关键部位的停留时间，如对产品介绍以及对于其他购买用户评价的关注行为等。</p>
+        <p>6.定时与服务器同步用户操作数据，即时分类存入数据库。</p>
+        <p>7.提供可视化web界面，具体查看某个用户的所有浏览行为；查看基于所有用户操作行为所生成的搜索页面的热力图，如点击热力图，滚动条热力图。</p>
+        </p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="aboutName">
+          <p>13计科（2）班</p>
+          <p>成 博</p>
+          <p>2017年5月1日</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</section>
+</div>
+
+</div>
+
+</div>
+
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/amazeui/js/amazeui.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tablesorter.js"></script> 
+<script type="text/javascript" src="lib/heatmap.js"></script>
+<!-- 自己的js -->
+<script src="js/js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+﻿body{
+	background-color: #eee;
+	cursor:default;
+}
+html,body{
+    margin:0px;
+    height:100%;
+    overflow: auto;
+}
+
+#loginTitle{
+	margin-top: 180px;
+	margin-bottom: 70px;
+}
+#loginTitle img{
+	margin-left: -50px;
+}
+.loginBtn{
+	margin-top: 20px;
+}
+
+/*以下为登录后页面*/
+#userName{
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+#exit button{
+	font-size: 1em;
+	background-color: #3a3a3a;
+	border-color: #252424
+}
+#exit button:hover{
+	background-color: #292828;
+	border-color: #252424
+}
+.am-topbar-brand{
+	line-height: 28.8px;
+}
+
+.am-topbar-brand > a >img {
+	margin-top: 0;
+	padding-top: 0;
+	height: 50px;
+}
+.Header{
+	background-color: #333;
+	border-color: #333;
+	margin-bottom:0;
+}
+.functionBtn{
+	background-color: inherit;
+	text-align: left;
+	text-indent: 1em;
+	outline-style:none;
+} 
+.functionBtn:focus{
+	outline-style:none;
+	}   
+.functionBtn:hover{
+	background-color: #f1f1f2;
+}
+/*左分栏*/
+.left{
+	height: 1000px;
+	border-right:1px solid #eee;
+}
+.am-panel-hd{
+	text-align: center;
+	font-size: 1.1em;
+	border-bottom-style: none;
+
+}
+.am-panel{
+	margin-bottom: 0;
+	border-style: none;
+}
+
+
+/*右分栏*/
+
+tr{
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+
+}
+
+
+	 .roundedCorners {
+	    
+	    padding: 0 10px;
+	    border-radius: 1em;
+	    -moz-border-radius: 1em;
+	    -webkit-border-radius: 1em;
+	}
+.scorebox{
+	margin-bottom: 0px!important;
+}
+#scorebox{
+	margin-bottom: 100px;
+}
+.hidden{display:none;}
+
+#aboutName{
+	width: 200px;
+	text-align: center;
+	margin-left: auto;
+}
+.checkJumpData .am-panel-bd{
+	    overflow: overlay;
+}
+.am-btn:active:focus, .am-btn:focus{
+	  outline: none !important;  
+     outline: none !important; 
+     outline-offset: 0; 
+}
+.am-accordion-content{
+	 overflow: visible;
+	 max-height: 900px;
+
+}
+.am-collapse{
+	overflow:auto;
+	max-height: 900px;
+}
+.heatmapbox{
+	position: relative;
+	overflow: visible;
+}
+.heatmapFloat{
+	position: absolute;
+	top: 0;
+    left: 0;
+    overflow: visible;
+}
+.clickMap,.scrollMap{
+	background-color: #0037ff;
+ 	opacity: 0.4;
+ 	z-index: 99998;
+}
+iframe{
+	overflow:hidden;
+	zoom:1;
+}
+.toolsbox{
+	position: absolute;
+	width:700px;
+	left: 20px;
+	z-index: 99999;
+	opacity: 0.8;
+}
+.centerBox{
+	left: 50%;
+	margin-left: -350px;
+}
+.infoBtnBox{
+	margin: auto 0 ;
+}
+.fullScreen{
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: scroll;
+	z-index: 99997;
+	width:100%;
+	padding: auto 0;
+	background-color: rgba(0,0,0,0.8);
+	max-height: 100%;
+}
+.hidden{
+	display: none;
+}
+a span.tableJumpurl{
+	display: inline-block;
+max-width: 300px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+a span.jumpurl,a span.pageTitle{
+display: inline-block;
+max-width: 600px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.moreinformationAccordion{
+	position: fixed;
+	top: 150px;
+	right: 35px;
+	color: #fff;
+	overflow: hidden;
+	z-index: 99998;
+	width:400px;
+	padding:10px;
+	max-height: 100%;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.8);
+}
+.infoIteam{
+	float: left;
+	width: 390px;
+}
+.jumpDataPropItem{
+	float: left;
+	width: 300px;
+}
+.moreinforBox .title{
+	cursor: pointer;
+	text-decoration: underline;	
+}
+.moreinforBox .title:hover{
+	color: #888;
+}
